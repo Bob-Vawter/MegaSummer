@@ -3,3 +3,8 @@
 // "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
 //
 // --> "alpha beta gamma delta alpha beta gamma delta"
+const removeConsecutiveDuplicates = s => {
+  s=s.split(' ')
+  s = s.filter((a,i)=>a!=s[i+1])
+  return s.join(' ')
+}
